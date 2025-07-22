@@ -1,0 +1,29 @@
+{
+  "name": "marqo-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fluentui-contrib/react-resize-handle": "^0.7.1",
+    "@fluentui/react-components": "^9.66.2",
+    "@fluentui/react-icons": "^2.0.304",
+    "@monaco-editor/react": "^4.7.0",
+    "marked-react": "^3.0.0",
+    "next": "15.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.4"
+  }
+}
