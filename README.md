@@ -41,13 +41,9 @@
 ### Editor & Markdown
 - **[@monaco-editor/react 4.7.0](https://github.com/suren-atoyan/monaco-react)** - VS Code editor in the browser
 - **[react-markdown 10.1.0](https://github.com/remarkjs/react-markdown)** - Markdown to React component renderer
-- **[remark-gfm 4.0.1](https://github.com/remarkjs/remark-gfm)** - GitHub Flavored Markdown support
 
 ### State Management
 - **[zustand 5.0.5](https://github.com/pmndrs/zustand)** - Lightweight state management
-
-### Additional Dependencies
-- **[marked-react 3.0.0](https://github.com/sibiraj-s/marked-react)** - Alternative markdown processor
 
 ## 🎮 How to Use
 
@@ -85,7 +81,7 @@ To reference data, use: /<db.class.car.hyundai.has.wheel.all>/
 - Browse the hierarchical data structure in the left panel
 - Search for specific paths using the search box
 - Click the insert button (➕) next to any item to add it to your markdown
-- Click the table button (📊) next to arrays to insert as tables
+- Click the table button (➕) next to arrays to insert as tables
 - Hover over items to see data previews
 
 ### Editor Features
@@ -93,41 +89,6 @@ To reference data, use: /<db.class.car.hyundai.has.wheel.all>/
 - **View Modes**: Switch between edit-only, split, and preview-only modes
 - **Text Formatting**: Bold, italic, and other markdown formatting tools
 - **Live Updates**: See changes reflected in real-time
-
-## 📁 Project Structure
-
-```
-src/
-├── app/                    # Next.js App Router
-│   ├── layout.js          # Root layout
-│   └── page.js            # Main page component
-├── components/
-│   ├── db-tree/           # Database explorer
-│   │   └── db-tree-view.js
-│   ├── layout/            # Layout components
-│   │   └── header.js
-│   ├── markdown/          # Markdown editor components
-│   │   ├── markdown-container.js
-│   │   ├── markdown-editor.js
-│   │   ├── markdown-preview.js
-│   │   └── markdown-toolbar.js
-│   └── ui/                # Reusable UI components
-│       └── resize-handle.js
-├── lib/
-│   ├── services/          # Business logic
-│   │   └── databaseService.js
-│   └── store/             # State management
-│       └── useMarkdownStore.js
-```
-
-## 🔧 Development Scripts
-
-```bash
-npm run dev      # Start development server with Turbopack
-npm run build    # Build for production
-npm run start    # Start production server
-npm run lint     # Run ESLint
-```
 
 ## 🎨 Customization
 
@@ -148,20 +109,6 @@ const mockDatabase = {
 ### Styling
 The project uses Fluent UI's design tokens and makeStyles API for consistent theming and easy customization.
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is built with [Next.js](https://nextjs.org) and uses various open-source libraries. Check individual package licenses for details.
-
-## 🚀 Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
